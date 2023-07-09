@@ -1,0 +1,245 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>nav</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+
+ </head>
+<style>
+
+@font-face{
+    font-family:'dd';
+    src: url('../assets/fonts/roblox/Roblox\ Font\ Bold.otf');
+   }
+  :root{
+      --White: hsl(0, 0%, 100%);
+      --Black: hsl(0, 0%, 0%);
+      --Dark-Gray: hsl(0, 0%, 55%);
+      --Very-Dark-Gray: hsl(0, 0%, 41%);
+      --alta:'Alata', sans-serif;
+      --josefin:'Josefin Sans', sans-serif;
+      --mono: 'Major Mono Display', monospace;
+
+      --mainColor-1:#B0D1D9;
+      --mainColor-2:#4f6f73;
+      --mainColor-3:#77A1A6;
+      --mainColor-4:#2E3E40;
+      --mainColor-5:#1F2526;
+      --mainColor-6:#77A1A658;
+      --mainColor-7:#4f6f7325;
+  }
+  *{
+    cursor: url("./assets/cursor/cursor.cur"),
+    auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Alata', sans-serif;
+    /* cursor: none; */
+    /* user-select: none; */
+    /* -webkit-user-drag: none; */
+      -webkit-tap-highlight-color: transparent;
+      -moz-tap-highlight-color: transparent;
+  /* outline: 1px solid rgb(145, 140, 180);  */
+  scroll-behavior: smooth;
+  }
+.nav--humburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--mainColor-3);
+    width: 1.5cm;
+    height: 1.5cm;
+    position: fixed;
+  border: 3px  var(--mainColor-2) solid;
+  margin: 20px;
+  padding: 10px;
+  z-index: 999;
+  /* box-shadow: var(--mainColor-2)-5px 0px 0px 0px  ; */
+
+  }
+  .nav--humburger.humburger--active{
+    border: 3px var(--mainColor-1) solid;
+    /* box-shadow: var(--mainColor-1)-5px 0px 0px 0px  ; */
+  }
+
+  .nav--humburger span{
+    height: 5px;
+    background-color: var(--mainColor-2);
+    transition: all 0.5s;
+  }
+  .nav--humburger.humburger--active span{
+    background-color: var(--mainColor-1);
+  
+  }
+  .nav--humburger span:nth-child(1){
+    transform: translate(10px,10px) rotate(90deg);
+  }
+  .nav--humburger span:nth-child(2){
+    /* opacity: 0; */
+    width: 20px;
+    transform: translate(5px,0px) ;
+  }
+  .nav--humburger span:nth-child(3){
+    transform: translate(-10px,-10px)  rotate(-90deg);
+  }
+  
+  .nav--humburger.humburger--active span:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+  }
+  .nav--humburger.humburger--active span:nth-child(2){
+    opacity: 550;
+    width: 0px;
+    transform: translate(15px,0px) ;
+  
+  
+  }
+  .nav--humburger.humburger--active span:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+
+ .nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5cm;
+    height: 1.5cm;
+    position: fixed;
+    background-color: var(--mainColor-3);
+    border: 3px  var(--mainColor-2) solid;
+    margin: 20px;
+    padding: 10px;
+    transition: 1s ;
+    filter: brightness(110%) opacity(75%);
+    transform: translate(0%,0%);
+    
+}
+.nav:hover{
+    position: fixed;
+    background-color: var(--mainColor-6);
+    border: 3px  var(--mainColor-2) solid;
+    margin: 20px;
+    padding: 10px;
+    transition: 0.5s ;
+    filter: brightness(110%) opacity(100%);
+    transform: translate(0%,0%);
+}
+.nav img{
+    height: 1cm;
+    width: 1cm;
+}
+  .nav--home.active{
+    z-index: 8;
+    transform: translate(0%,125%);
+    transform: translate(125%,0%);
+  }    
+
+  .nav--about.active{
+transform: translate(0%,250%);
+transform: translate(250%,0%);
+z-index: 7;
+  }    
+  .nav--work.active{
+transform: translate(0%,375%);
+transform: translate(0%,125%);
+z-index: 6;
+  }    
+  .nav--contact.active{
+transform: translate(0%,500%);
+transform: translate(0%,250%);
+z-index: 5;
+  }    
+
+ .in{
+background-color:var(--mainColor-1);
+filter: brightness(110%) opacity(100%);
+border:3px var(--mainColor-2) solid;
+
+  }
+  .in img{
+    filter: brightness(1) ;
+
+  }
+
+
+  
+  /* /////////////////////////////////// */
+
+</style>
+ <body>
+    
+
+    <div class="nav--humburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+ <div class="nav in nav--home" >
+ <a href="#hero"> <img src="./assets/icons/navbar/home.svg" alt=""></a>
+</div>
+ <div class="nav nav--about"  >
+ <a href="#about"> <img src="./assets/icons/navbar/user.svg" alt=""></a>
+</div>
+ <div class="nav nav--work"  >
+ <a href="#work"><img src="./assets/icons/navbar/web.svg" alt=""></a>
+</div>
+ <div class="nav nav--contact"  >
+ <a href="#contact"><img src="./assets/icons/navbar/contactus.svg" alt=""></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+
+
+
+ <script>
+
+
+let navHumburger=document.querySelector(".nav--humburger")
+let nav= document.querySelectorAll(".nav")
+
+navHumburger.addEventListener("click",function (){ 
+    navHumburger.classList.toggle("humburger--active");
+    nav.forEach(a=>a.classList.toggle("active"))
+    
+    // headerMobile.classList.toggle("hidden");
+ }
+ )
+ nav.forEach(a=>a.addEventListener("click",function (){ 
+   setTimeout(()=>{
+    navHumburger.classList.toggle("humburger--active");
+    nav.forEach(a=>a.classList.toggle("active"))
+},200)
+    
+    
+    // headerMobile.classList.toggle("hidden");
+ }
+ ))
+ document.addEventListener('scroll', ()=>{
+    navHumburger.classList.remove("humburger--active");
+    nav.forEach(a=>a.classList.remove("active"))
+ })
+
+
+
+ </script>
+ </html>

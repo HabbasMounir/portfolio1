@@ -1,0 +1,82 @@
+
+/* //////////.nav--humburger{}////////////// */
+.navbar{
+  /* height: 50vh; */
+  width: 5cm;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 10px;
+  align-items: start;
+   position: fixed;
+    top: 0%;
+    left: 00%;
+    transform: translate(-1%,0%) rotate(90deg);
+    z-index: 99999;
+    opacity: 1;
+    transition: 0.5s 2s;
+}
+
+
+
+
+
+
+.nav__circle{
+  height: 1cm;
+  width: 1cm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px; */
+  border-radius: 0 50% 50% 0;
+  background-color: var(--mainColor-1);
+  border: var(--mainColor-4) 0.05cm solid;
+  opacity: 0.8;
+  transition: 0.5s;
+  /* transform: rotate(90deg); */
+}
+/* ////////////:hove/////////// */
+.nav__circle:hover{
+  height:1cm;
+  width: 50%;
+  border-radius:0 0.75cm 0.75cm 0;
+  background-color: var(--mainColor-1);
+  border: var(--mainColor-4) 0.05cm solid;
+
+}
+.nav__circle img{
+  height: 0.6cm;
+  position: absolute;
+  transition: 0.3s;
+transform: rotate(-90deg);
+  }
+.nav__circle:hover img{
+  opacity: 0;
+  position: absolute;
+  }
+.nav__circle span{
+  font-size: 0.5cm;
+  font-family: dd;
+  color: var(--mainColor-4);
+  opacity: 0;
+  transition: 0.3s;
+  }
+  .nav__circle a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.nav__circle:hover span{
+opacity: 1;
+}
+
+/* /////////////////////////////// */
+
+
+
+
+
+
+
+
