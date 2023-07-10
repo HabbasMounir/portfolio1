@@ -295,7 +295,55 @@ let gallerycontent=[
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
-        id:1,
+      id:2,
+      title: "loopsudios" ,
+      number:1,
+      src: "/loopstudios/loopstudios.jpeg" ,
+      tools:["html5","css3","js"],
+      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    },
+    {
+      id:3,
+      title: "invoic" ,
+      number:4,
+      src: "/invoic/invoic01.jpeg" ,
+      tools:["html5","css3","js"],
+      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    },
+    {
+      id:4,
+      title: "portfolio" ,
+      number:1,
+      src: "/portfolio/webp.jpeg" ,
+      tools:["html5","css3","js"],
+      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    },
+    {
+      id:5,
+      title: "portfolio" ,
+      number:1,
+      src: "/portfolio/webp.jpeg" ,
+      tools:["html5","css3","js"],
+      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    },
+    {
+      id:6,
+      title: "portfolio" ,
+      number:1,
+      src: "/portfolio/webp.jpeg" ,
+      tools:["html5","css3","js"],
+      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    },
+    {
+      id:7,
+      title: "portfolio" ,
+      number:1,
+      src: "/portfolio/webp.jpeg" ,
+      tools:["html5","css3","js"],
+      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    },
+    {
+        id:8,
       title: "Aloomic update" ,
       src: "/aloomic/aloomic4.jpeg" ,
       tools:["html5","css3","js"],
@@ -321,7 +369,7 @@ let gallerycontent=[
 </div>`
 
  }
- 
+
  let cardPopup=document.querySelector(".card__popup")
  let popupShadow=document.querySelector(".popup__shadow")
  let workCard=document.querySelectorAll(".work__card")

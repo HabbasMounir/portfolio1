@@ -151,6 +151,11 @@ img{
 
 /* ///////////////////////////////////// */
 
+body::-webkit-scrollbar {width: 0cm; background-color: var(--mainColor-1);}
+body::-webkit-scrollbar-thumb {background:#1F252670 ;opacity: 0.5;margin:  100px 0;}
+body::-webkit-scrollbar-thumb:hover {background: var(--mainColor-4);margin: 100px;}
+
+
 
 ::-webkit-scrollbar {width: 0.3cm; background-color: var(--mainColor-1);}
 ::-webkit-scrollbar-thumb {background:#1F252670 ;opacity: 0.5;margin:  100px 0;}

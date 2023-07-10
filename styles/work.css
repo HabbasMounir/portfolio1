@@ -1,5 +1,5 @@
 .work{ 
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     padding: 0vh 5vw ;
     overflow: hidden;
@@ -8,11 +8,12 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content:center;
-    align-content: center;
+    justify-content: start;
+    align-content:start;
+    
+  overflow-y: scroll;  
   }
-.work *{ 
+.work { 
     /* outline: 2px solid; */
   }
   .work__header{

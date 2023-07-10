@@ -4,14 +4,15 @@
   /* height: 50vh; */
   width: 5cm;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   align-items: start;
    position: fixed;
-    top: 0%;
+    top: 50%;
     left: 00%;
-    transform: translate(-1%,0%) rotate(90deg);
+
+    transform: translate(10%,-50%) rotate(0deg);
     z-index: 99999;
     opacity: 1;
     transition: 0.5s 2s;
@@ -23,44 +24,46 @@
 
 
 .nav__circle{
-  height: 1cm;
-  width: 1cm;
+  height: 0.6cm;
+  width: 0.6cm;
   display: flex;
   align-items: center;
   justify-content: center;
   /* padding: 10px; */
-  border-radius: 0 50% 50% 0;
+  /* border-radius: 0 50% 50% 0; */
   background-color: var(--mainColor-1);
   border: var(--mainColor-4) 0.05cm solid;
   opacity: 0.8;
   transition: 0.5s;
-  /* transform: rotate(90deg); */
+  transform: rotate(45deg);
 }
 /* ////////////:hove/////////// */
 .nav__circle:hover{
-  height:1cm;
-  width: 50%;
-  border-radius:0 0.75cm 0.75cm 0;
+  height:0.8cm;
+  width: 60px;
+  /* border-radius:0 0.75cm 0.75cm 0; */
   background-color: var(--mainColor-1);
   border: var(--mainColor-4) 0.05cm solid;
+  transform: rotate(0deg);
+
 
 }
 .nav__circle img{
-  height: 0.6cm;
+  height: 0.4cm;
   position: absolute;
   transition: 0.3s;
-transform: rotate(-90deg);
+transform: rotate(-45deg);
   }
 .nav__circle:hover img{
   opacity: 0;
   position: absolute;
   }
 .nav__circle span{
-  font-size: 0.5cm;
+  font-size: 0.4cm;
   font-family: dd;
   color: var(--mainColor-4);
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.3s 0s;
   }
   .nav__circle a{
     display: flex;
@@ -69,6 +72,8 @@ transform: rotate(-90deg);
     }
 .nav__circle:hover span{
 opacity: 1;
+transition: 0.3s 0.1s;
+
 }
 
 /* /////////////////////////////// */
