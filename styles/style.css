@@ -161,8 +161,7 @@ img{
 /* DOM */
 
   *{
-    cursor: url("../assets/cursor/cursor.cur"),
-    auto;
+   
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -185,6 +184,8 @@ img{
 body{
     background-color: var(--mainColor-1);
     /* height: 1000vh; */
+    cursor: url("../assets/cursor/Kaihover.cur"),
+    auto;
 }
 a{
   text-decoration: none;

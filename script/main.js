@@ -1,34 +1,4 @@
 
-
-
-// function getFullscreen() {
-//     return document.fullscreenElement
-//     ||document.webkitFullscreenElement
-//     ||document.mozFullscreenElement
-//     ||document.nsFullscreenElement
-// }
-
-
-// setTimeout(() => {
-//     document.documentElement.requestFullscreen().catch(console.log)
-// console.log(100)
-// }, 3000);
-// document.addEventListener("dblclick",function (){ 
-//     if (getFullscreen()) {
-//         document.exitFullscreen()
-//     }else{
-//             document.documentElement.requestFullscreen().catch(console.log)
-//             console.log(12)
-
-//     }
-
-// })
-
-
-
-
-
-
 let heroDesciption=document.querySelectorAll(".hero__content")
 
 
@@ -53,41 +23,6 @@ let aboutContent=document.querySelector('.about__content')
 textToLetter(hiMe)
 textToLetter(aboutContent)
 textToLetter(document.querySelector('.get__me h1'))
-
-
-// /////////////////////////////////////////////
-
-// nav--humburger
-
-// let navHumburger=document.querySelector(".nav--humburger")
-// let nav= document.querySelectorAll(".nav")
-
-// navHumburger.addEventListener("click",function (){ 
-//     navHumburger.classList.toggle("humburger--active");
-//     nav.forEach(a=>a.classList.toggle("active"))
-    
-//     // headerMobile.classList.toggle("hidden");
-//  }
-//  )
-//  nav.forEach(a=>a.addEventListener("click",function (){ 
-//    setTimeout(()=>{
-//     navHumburger.classList.toggle("humburger--active");
-//     nav.forEach(a=>a.classList.toggle("active"))
-// },200)
-    
-    
-//     // headerMobile.classList.toggle("hidden");
-//  }
-//  ))
-//  document.addEventListener('scroll', ()=>{
-//     navHumburger.classList.remove("humburger--active");
-//     nav.forEach(a=>a.classList.remove("active"))
-//  })
-
-// ///////////////////////////////////////////
-
-
-
 
 
 
@@ -166,7 +101,7 @@ document.addEventListener('scroll', ()=>{
 
 
 
-
+// /////////// change p to r
 
 let myPhoto=document.querySelector('.my__photo')
 let resume=`<div class="resume__about resume--desktop">
@@ -209,7 +144,7 @@ let resumeAbout=document.querySelector('.resume__about')
 
 // })
 
-
+// //////////////////////
 
 
 
@@ -339,3 +274,82 @@ function skillsDesActive() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+let gallerycontent=[
+    {
+      id:1,
+      title: "portfolio" ,
+      number:1,
+      src: "/portfolio/webp.jpeg" ,
+      tools:["html5","css3","js"],
+      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    },
+    {
+        id:1,
+      title: "Aloomic update" ,
+      src: "/aloomic/aloomic4.jpeg" ,
+      tools:["html5","css3","js"],
+      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+     
+    }
+
+  ]
+
+
+
+  let gallery=document.querySelector('.gallery')
+
+  for (let i = 0; i < gallerycontent.length; i++) {
+    gallery.innerHTML+= ` 
+    <div class="work__card">
+    <img src="./assets/images/work${gallerycontent[i].src}" alt="" srcset="">
+    <div class="card__desc"></div>
+    <div class="card__detail">
+
+        <div class="card__title">${gallerycontent[i].title}</div>
+</div>
+</div>`
+
+ }
+ 
+ let cardPopup=document.querySelector(".card__popup")
+ let popupShadow=document.querySelector(".popup__shadow")
+ let workCard=document.querySelectorAll(".work__card")
+ 
+ 
+ workCard.forEach(a=>
+     a.addEventListener("click",()=>{
+         cardPopup.style.display="unset"
+         popupShadow.style.display="unset"
+         cardPopup.classList.remove('disactive')
+     popupShadow.classList.remove('disactive')
+     })
+     
+     )
+   
+ 
+ 
+ 
+     function remove() {
+          cardPopup.classList.add('disactive')
+     popupShadow.classList.add('disactive')
+     setTimeout(()=>{
+         cardPopup.style.display="none"
+         popupShadow.style.display="none"
+     
+     
+     },200)
+     }
+
+ cardPopup.addEventListener('click',remove)
+ document.addEventListener('scroll',remove) 
