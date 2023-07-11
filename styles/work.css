@@ -288,19 +288,6 @@ align-items: center;
 
 
 }
-.details__center{
-  position: absolute;
-/* height: 100%; */
-/* background-color: aqua; */
-display: flex;
-/* gap: 20px; */
-width: 100%;
-flex-direction: column;
-justify-content: end;
-align-items: end;
-
-
-}
 .show__details .project__title{
  color: var(--mainColor-4);
 font-family: dd;
