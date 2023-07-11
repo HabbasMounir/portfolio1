@@ -1,11 +1,12 @@
 
 /* //////////.nav--humburger{}////////////// */
 .navbar{
-  /* height: 50vh; */
-  width: 5cm;
+  /* height: 0px; */
+  /* width: 1cm; */
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: space-between; */
   gap: 20px;
   align-items: start;
    position: fixed;
@@ -29,8 +30,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 10px; */
-  /* border-radius: 0 50% 50% 0; */
+  padding: 10px;
+  margin: 0px;
+  /* border-radius: 50%; */
   background-color: var(--mainColor-1);
   border: var(--mainColor-4) 0.05cm solid;
   opacity: 0.8;
@@ -46,6 +48,7 @@
   border: var(--mainColor-4) 0.05cm solid;
   transform: rotate(0deg);
 
+  /* border-radius: 50%; */
 
 }
 .nav__circle img{

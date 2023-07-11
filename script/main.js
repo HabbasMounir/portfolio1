@@ -290,6 +290,7 @@ let gallerycontent=[
       id:1,
       title: "portfolio" ,
       number:1,
+      state:"light",
       src: "/portfolio/webp.jpeg" ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
@@ -298,6 +299,7 @@ let gallerycontent=[
       id:2,
       title: "loopsudios" ,
       number:1,
+      state:"light",
       src: "/loopstudios/loopstudios.jpeg" ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
@@ -306,45 +308,52 @@ let gallerycontent=[
       id:3,
       title: "invoic" ,
       number:4,
-      src: "/invoic/invoic01.jpeg" ,
+      state:"light",
+
+      src: "/invoic/invoic02.jpeg" ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
       id:4,
-      title: "portfolio" ,
+      title: "wrapped green" ,
       number:1,
-      src: "/portfolio/webp.jpeg" ,
+      state:"light",
+      src: "/wrappedGreen/wrappedGreen.jpeg" ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
       id:5,
-      title: "portfolio" ,
+      title: "bloger" ,
       number:1,
-      src: "/portfolio/webp.jpeg" ,
+      state:"light",
+      src: "/bloger/bloger.jpeg" ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
       id:6,
-      title: "portfolio" ,
+      title: "QR code" ,
       number:1,
-      src: "/portfolio/webp.jpeg" ,
+      state:"light",
+      src: "/qrcode/qrcode.jpeg" ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
       id:7,
-      title: "portfolio" ,
+      title: "quiz" ,
       number:1,
-      src: "/portfolio/webp.jpeg" ,
+      state:"light",
+      src: "/quiz/quiz.jpeg" ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
         id:8,
       title: "Aloomic update" ,
+      state:"dark",
       src: "/aloomic/aloomic4.jpeg" ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
@@ -358,8 +367,11 @@ let gallerycontent=[
   let gallery=document.querySelector('.gallery')
 
   for (let i = 0; i < gallerycontent.length; i++) {
-    gallery.innerHTML+= ` 
-    <div class="work__card">
+
+
+   
+            gallery.innerHTML+= ` 
+    <div class="work__card card--${gallerycontent[i].state}">
     <img src="./assets/images/work${gallerycontent[i].src}" alt="" srcset="">
     <div class="card__desc"></div>
     <div class="card__detail">
@@ -367,13 +379,16 @@ let gallerycontent=[
         <div class="card__title">${gallerycontent[i].title}</div>
 </div>
 </div>`
+    
+
 
  }
 
  let cardPopup=document.querySelector(".card__popup")
  let popupShadow=document.querySelector(".popup__shadow")
  let workCard=document.querySelectorAll(".work__card")
- 
+ let exit=document.querySelector(".exit")
+
  
  workCard.forEach(a=>
      a.addEventListener("click",()=>{
@@ -399,5 +414,6 @@ let gallerycontent=[
      },200)
      }
 
- cardPopup.addEventListener('click',remove)
+     exit.addEventListener('click',remove)
+     popupShadow.addEventListener('click',remove)
  document.addEventListener('scroll',remove) 
