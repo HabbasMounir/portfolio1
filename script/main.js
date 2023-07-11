@@ -289,46 +289,43 @@ let gallerycontent=[
     {
       id:1,
       title: "portfolio" ,
-      number:1,
       state:"light",
-      src: "/portfolio/webp.jpeg" ,
+      src: ["/portfolio/webp.jpeg"] ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
       id:2,
       title: "loopsudios" ,
-      number:1,
+     
       state:"light",
-      src: "/loopstudios/loopstudios.jpeg" ,
+      src: ["/loopstudios/loopstudios.jpeg" ],
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
       id:3,
       title: "invoic" ,
-      number:4,
       state:"light",
 
-      src: "/invoic/invoic02.jpeg" ,
+      src:["/invoic/invoic01.jpeg" ,"/invoic/invoic02.jpeg" ,"/invoic/invoic03.jpeg" ,"/invoic/invoic04.jpeg" ] ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
       id:4,
       title: "wrapped green" ,
-      number:1,
+
       state:"light",
-      src: "/wrappedGreen/wrappedGreen.jpeg" ,
+      src: ["/wrappedGreen/wrappedGreen.jpeg"] ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
       id:5,
       title: "bloger" ,
-      number:1,
       state:"light",
-      src: "/bloger/bloger.jpeg" ,
+      src: ["/bloger/bloger.jpeg"] ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
@@ -337,16 +334,15 @@ let gallerycontent=[
       title: "QR code" ,
       number:1,
       state:"light",
-      src: "/qrcode/qrcode.jpeg" ,
+      src: ["/qrcode/qrcode.jpeg"] ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
       id:7,
       title: "quiz" ,
-      number:1,
-      state:"light",
-      src: "/quiz/quiz.jpeg" ,
+      number:1,      state:"light",
+      src: ["/quiz/quiz.jpeg" ],
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
@@ -354,7 +350,11 @@ let gallerycontent=[
         id:8,
       title: "Aloomic update" ,
       state:"dark",
-      src: "/aloomic/aloomic4.jpeg" ,
+      src: ["/aloomic/aloomic4.jpeg",
+            "/aloomic/aloomic2.jpeg",
+            "/aloomic/aloomic3.jpeg",
+            "/aloomic/aloomic1.jpeg",
+            ] ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
      
@@ -372,7 +372,7 @@ let gallerycontent=[
    
             gallery.innerHTML+= ` 
     <div class="work__card card--${gallerycontent[i].state}">
-    <img src="./assets/images/work${gallerycontent[i].src}" alt="" srcset="">
+    <img src="./assets/images/work${gallerycontent[i].src[0]}" alt="" srcset="">
     <div class="card__desc"></div>
     <div class="card__detail">
 
@@ -390,12 +390,55 @@ let gallerycontent=[
  let exit=document.querySelector(".exit")
 
  
- workCard.forEach(a=>
+ workCard.forEach((a,i)=>
      a.addEventListener("click",()=>{
+
+        cardPopup.innerHTML=`
+        <div class="show__room">
+       
+    </div>
+    <div class="show__details">
+        <div class="details__left">
+           <div class="project__title">
+             prject title : ${gallerycontent[i].title}
+        </div>
+        <div class="project__tools">
+           tools:  js 
+            css 
+            react
+        </div>
+        </div>
+        
+        <div class="details__right">
+       <a class="exit">
+        exit
+    </a>
+    
+    <a class="deemo">
+        visit demo
+    </a>    
+    
+     
+      
+    </div>
+    </div>
+        
+        
+        `
+        let showRoom=document.querySelector(".show__room")
+        for (let k = 0; k<gallerycontent[i].src.length;k++) {
+            showRoom.innerHTML+=`    <img src="./assets/images/work${gallerycontent[i].src[k]}" alt="" srcset="">
+        `
+
+        }
+
+
          cardPopup.style.display="unset"
          popupShadow.style.display="unset"
          cardPopup.classList.remove('disactive')
      popupShadow.classList.remove('disactive')
+     let exit=document.querySelector(".exit")
+     exit.addEventListener('click',remove)
      })
      
      )
@@ -407,11 +450,11 @@ let gallerycontent=[
           cardPopup.classList.add('disactive')
      popupShadow.classList.add('disactive')
      setTimeout(()=>{
-         cardPopup.style.display="none"
-         popupShadow.style.display="none"
+        cardPopup.style.display="none"
+        popupShadow.style.display="none"
+    
      
-     
-     },200)
+     },400)
      }
 
      exit.addEventListener('click',remove)
