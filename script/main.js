@@ -355,7 +355,7 @@ let gallerycontent=[
             "/aloomic/aloomic3.jpeg",
             "/aloomic/aloomic1.jpeg",
             ] ,
-      tools:["html5","css3","js"],
+      tools:["css3","js","locomotive"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
      
     }
@@ -403,9 +403,7 @@ let gallerycontent=[
              prject title : ${gallerycontent[i].title}
         </div>
         <div class="project__tools">
-           tools:  js 
-            css 
-            react
+           tools: 
         </div>
         </div>
         
@@ -429,7 +427,11 @@ let gallerycontent=[
         for (let k = 0; k<gallerycontent[i].src.length;k++) {
             showRoom.innerHTML+=`    <img src="./assets/images/work${gallerycontent[i].src[k]}" alt="" srcset="">
         `
+        }
+        let tools=document.querySelector(".project__tools")
 
+        for (let k = 0; k<gallerycontent[i].tools.length;k++) {
+            tools.innerHTML+=`<span>${gallerycontent[i].tools[k]} <span> `
         }
 
 

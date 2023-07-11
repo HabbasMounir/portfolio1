@@ -266,6 +266,18 @@ font-family: dd;
 text-transform: uppercase;
 font-size: 0.6cm;
 font-weight: 800;
+}
+.show__details .project__tools span{
+ color: var(--mainColor-2);
+font-family: dd;
+
+text-transform: uppercase;
+font-size: 0.5cm;
+font-weight: 800;
+transition: 0.4s;
+}
+.show__details .project__tools span:hover{
+ color: var(--mainColor-4);
 
 }
 .show__details .deemo{
