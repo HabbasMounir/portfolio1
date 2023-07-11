@@ -25,6 +25,7 @@
 
 
 .nav__circle{
+  position: absolute;
   height: 0.6cm;
   width: 0.6cm;
   display: flex;

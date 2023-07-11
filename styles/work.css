@@ -191,7 +191,8 @@ color: var(--mainColor-3);
 
 .card__popup{
 width: 60%;
-height: 500px;
+max-height: 500px;
+height: 60vh;
 background-color: aqua;
 position: fixed;
 top: 50%;
@@ -275,18 +276,38 @@ padding: 8px;
 text-transform: uppercase;
 font-size: 0.4cm;
 font-weight: 800;
+background-color: #0000;
 /* height: 40px; */
 text-align: center;
+transition: 0.4s;
+}
+.show__details .deemo:hover{
+ color: var(--mainColor-1);
+font-family: dd;
+border: 2px solid var(--mainColor-5) ;
+padding: 8px;
+text-transform: uppercase;
+font-size: 0.4cm;
+font-weight: 800;
+/* height: 40px; */
+text-align: center;
+background-color: var(--mainColor-4);
 }
 .show__details .exit{
  color: var(--mainColor-2);
 font-family: dd;
 /* border: 2px solid ; */
-padding: 8px;
+padding: 20px;
 text-transform: uppercase;
 font-size: 0.4cm;
 font-weight: 800;
+text-align: center;
+transition: 0.5s;
 
+}
+.show__details .exit:hover{
+ color: var(--mainColor-2);
+transform: scale(1.2);
 }
 
 
