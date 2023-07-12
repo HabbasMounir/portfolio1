@@ -1,4 +1,20 @@
 
+// nav bar/////////////////////////////////////
+let navBar=document.querySelector(".navbar")
+
+document.addEventListener('scroll',navBarshowing )
+
+function navBarshowing() {
+    if (    hero.getBoundingClientRect().bottom<=100) {
+        navBar.style.left= 0
+
+        
+    }else{
+        navBar.style.left= "-10%"
+
+    }
+}
+
 let heroDesciption=document.querySelectorAll(".hero__content")
 
 
@@ -80,19 +96,10 @@ document.addEventListener('scroll', ()=>{
  
 
     if (skillLeng.getBoundingClientRect().y<=window.pageYOffset) {
-
         skillsActive()
     }else{
         skillsDesActive()
     }
-
-
-
-
-
-
-
-
 }) 
 
 
@@ -321,6 +328,15 @@ let gallerycontent=[
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
+    {
+        id:4,
+        title: "wrapped green" ,
+  
+        state:"light",
+        src: ["/wrappedGreen/wrappedGreen.jpeg"] ,
+        tools:["html5","css3","js"],
+        colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+      },
     {
       id:5,
       title: "bloger" ,

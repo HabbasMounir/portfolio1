@@ -191,7 +191,7 @@ color: var(--mainColor-3);
 
 .card__popup{
 width: 60%;
-max-height: 500px;
+max-height: 600x;
 height: 60vh;
 background-color: aqua;
 position: fixed;
