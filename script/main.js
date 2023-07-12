@@ -350,7 +350,7 @@ let gallerycontent=[
       title: "QR code" ,
       number:1,
       state:"light",
-      src: ["/qrcode/qrcode.jpeg"] ,
+      src: ["/qrcode/QRcode.jpeg"] ,
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
