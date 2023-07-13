@@ -1,19 +1,62 @@
 
 // nav bar/////////////////////////////////////
 let navBar=document.querySelector(".navbar")
+let hero= document.querySelector(".hero")
+let about=document.querySelector(".about")
+let work=document.querySelector(".work")
+let navCircle=document.querySelectorAll(".nav__circle")
 
-document.addEventListener('scroll',navBarshowing )
 
 function navBarshowing() {
-    if (    hero.getBoundingClientRect().bottom<=100) {
-        navBar.style.left= 0
-
-        
-    }else{
-        navBar.style.left= "-10%"
-
+    hero.getBoundingClientRect().bottom<=100?navBar.style.left= 0:navBar.style.left= "-10%"
     }
+
+function changeNav() {
+    let section=[hero,about,work]
+    let sectionPosition=[]
+    let min = Infinity;
+    let index=0;
+    section.forEach(a=> sectionPosition.push(Math.abs(a.getBoundingClientRect().top)))
+    for (let j = 0; j < sectionPosition.length; j++) {
+        index = sectionPosition[j] < min ? j : index;
+        min = sectionPosition[j] < min ? sectionPosition[j] : min;
+    }
+
+navCircle.forEach(a=>a.classList.remove('in'))
+navCircle[index].classList.add('in')
 }
+// (function () {
+//     // const arr = [23, 65, 3, 19, 42, 74, 56, -42, 8, 88];
+//     const arr = [];
+  
+//     function findMinValue(arr) {
+//       if (arr.length) {
+//         let min = Infinity;
+  
+//         for (let num of arr) {
+//           min = num < min ? num : min;
+//         }
+  
+//         return min;
+//       }
+//       return 0; // or anything what you need
+//     }
+  
+//     console.log(findMinValue(arr)); // => -42
+//   })();
+
+
+document.addEventListener('scroll',navBarshowing )
+document.addEventListener('scroll',changeNav)
+
+
+
+
+
+
+
+
+
 
 let heroDesciption=document.querySelectorAll(".hero__content")
 
@@ -88,7 +131,6 @@ contactMe.addEventListener('mouseout',function () {
 
 
 let headerdesktop= document.querySelector(".header--desktop")
-let hero= document.querySelector(".hero")
 
 
 // ?scroll
@@ -127,7 +169,7 @@ let resume=`<div class="resume__about resume--desktop">
 </div>
       
   </div>`
-let about=`  <p class="about__content about--destop">
+let aboutDestop=`  <p class="about__content about--destop">
 a creative and driven web devloper  with a passion for solving complex problems and building intuitive user experiences.  I work on a lot of complex websites, where I have honed my skills in JavaScript, React, and Node.js.
 I am always on the lookout for new challenges and opportunities to grow, and I would love to be a part of a team that shares my passion for excellence and innovation. Let's connect and see how we can make amazing things happen! 
 </p>  `
@@ -140,7 +182,7 @@ myPhoto.addEventListener('mouseover',()=>{
         
     }else{
 let resumeAbout=document.querySelector('.resume__about')
-    resumeAbout.outerHTML=about
+    resumeAbout.outerHTML=aboutDestop
     textToLetter(document.querySelector('.about__content'))
     
     }
