@@ -8,7 +8,7 @@ let navCircle=document.querySelectorAll(".nav__circle")
 
 
 function navBarshowing() {
-    hero.getBoundingClientRect().bottom<=100?navBar.style.left= 0:navBar.style.left= "-10%"
+    hero.getBoundingClientRect().bottom<=100?navBar.style.left= 0:navBar.style.left= "-25%"
     }
 
 function changeNav() {

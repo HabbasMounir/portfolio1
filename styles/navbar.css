@@ -11,7 +11,7 @@
   align-items: start;
    position: fixed;
     top: 50%;
-    left: -20%;
+    left: -25%;
 
     transform: translate(0%,-50%) rotate(0deg);
     z-index: 99999;
@@ -34,8 +34,8 @@
   justify-content: center;
   /* margin: 0px; */
   /* border-radius: 50%; */
-  /* background-color: var(--mainColor-3); */
-  border: var(--mainColor-4) 0.1cm solid;
+  background-color: var(--mainColor-2);
+  border: var(--mainColor-3) 0.1cm solid;
   opacity: 0.8;
   transition: 0.8s 0.2s;
   transform: rotate(45deg) scale(1.2);
@@ -56,6 +56,7 @@
   justify-content: center;
   /* margin: 0px; */
   /* border-radius: 50%; */
+
   background-color: var(--mainColor-1);
   border: var(--mainColor-4) 0.1cm solid;
   opacity: 0.8;
@@ -97,7 +98,7 @@ filter: brightness(150%);
   }
 .nav__circle span{
   position: absolute;
-  left: 0.8cm;
+  left: 0.4cm;
   font-size: 0.4cm;
   font-family: dd;
   color: var(--mainColor-4);
