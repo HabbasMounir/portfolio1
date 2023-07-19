@@ -337,86 +337,93 @@ function skillsDesActive() {
 
 let gallerycontent=[
     {
-      id:1,
-      title: "portfolio" ,
-      state:"light",
-      src: ["/portfolio/portolio.jpeg"] ,
-      tools:["html5","css3","js"],
-      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    id:1,
+    title: "portfolio" ,
+    link:"https://habbasmounir.github.io/portfolio1",
+    state:"light",
+    src: ["/portfolio/portolio.jpeg"] ,
+    tools:["html5","css3","js"],
+    colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
       id:2,
-      title: "loopsudios" ,
-     
+    title: "loopsudios" ,
+    link:"https://habbasmounir.github.io/loopstudios-landing-page-main/",
       state:"light",
       src: ["/loopstudios/loopstudios.jpeg" ],
       tools:["html5","css3","js"],
       colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
-      id:3,
-      title: "invoic" ,
-      state:"light",
-
-      src:["/invoic/invoic01.jpeg" ,"/invoic/invoic02.jpeg" ,"/invoic/invoic03.jpeg" ,"/invoic/invoic04.jpeg" ] ,
-      tools:["html5","css3","js"],
-      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    id:3,
+    title: "invoic" ,
+    link:"",
+    state:"light",
+    src:["/invoic/invoic01.jpeg" ,"/invoic/invoic02.jpeg" ,"/invoic/invoic03.jpeg" ,"/invoic/invoic04.jpeg" ] ,
+    tools:["html5","css3","js"],
+    link:"https://habbasmounir.github.io/portfolio1",
+    colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
-      id:4,
-      title: "wrapped green" ,
-
-      state:"light",
-      src: ["/wrappedGreen/wrappedGreen.jpeg"] ,
-      tools:["html5","css3","js"],
-      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    id:4,
+    title: "wrapped green" ,
+    link:"",
+    state:"light",
+    src: ["/wrappedGreen/wrappedGreen.jpeg"] ,
+    tools:["html5","css3","js"],
+    colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
-        id:4,
-        title: "wrapped green" ,
-  
-        state:"light",
-        src: ["/wrappedGreen/wrappedGreen.jpeg"] ,
-        tools:["html5","css3","js"],
-        colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    id:4,
+    title: "wrapped green" ,
+    link:"",
+    state:"light",
+    src: ["/wrappedGreen/wrappedGreen.jpeg"] ,
+    tools:["html5","css3","js"],
+    colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
       },
     {
-      id:5,
-      title: "bloger" ,
-      state:"light",
-      src: ["/bloger/bloger.jpeg"] ,
-      tools:["html5","css3","js"],
-      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    id:5,
+    title: "bloger" ,
+    link:"https://habbasmounir.github.io/blogr-landing-page-main/",
+    state:"light",
+    src: ["/bloger/bloger.jpeg"] ,
+    tools:["html5","css3","js"],
+    colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
-      id:6,
-      title: "QR code" ,
-      number:1,
-      state:"light",
-      src: ["/qrcode/QRcode.jpeg"] ,
-      tools:["html5","css3","js"],
-      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    id:6,
+    title: "QR code" ,
+    link:"https://github.com/HabbasMounir/QR-code-component",
+    number:1,
+    state:"light",
+    src: ["/qrcode/QRcode.jpeg"] ,
+    tools:["html5","css3","js"],
+    colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
-      id:7,
-      title: "quiz" ,
-      number:1,      state:"light",
-      src: ["/quiz/quiz.jpeg" ],
-      tools:["html5","css3","js"],
-      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    id:7,
+    title: "quiz" ,
+    link:"https://habbasmounir.github.io/Quiz-app/quiz",
+    number:1,      state:"light",
+    src: ["/quiz/quiz.jpeg" ],
+    tools:["html5","css3","js"],
+    colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
     },
     {
-        id:8,
-      title: "Aloomic update" ,
-      state:"dark",
-      src: ["/aloomic/aloomic4.jpeg",
+    id:8,
+    title: "Aloomic update" ,
+    link:"",
+
+    state:"dark",
+    src: ["/aloomic/aloomic4.jpeg",
             "/aloomic/aloomic2.jpeg",
             "/aloomic/aloomic3.jpeg",
             "/aloomic/aloomic1.jpeg",
             ] ,
-      tools:["css3","js","locomotive"],
-      colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
-     
+    tools:["css3","js","locomotive"],
+    colors:["#B0D1D9","#4f6f73","#77A1A6","#2E3E40","#1F2526"]
+    
     }
 
   ]
@@ -470,13 +477,7 @@ let gallerycontent=[
        <a class="exit">
         exit
     </a>
-    
-    <a class="deemo">
-        visit demo
-    </a>    
-    
-     
-      
+
     </div>
     </div>
         
@@ -492,7 +493,18 @@ let gallerycontent=[
         for (let k = 0; k<gallerycontent[i].tools.length;k++) {
             tools.innerHTML+=`<span>${gallerycontent[i].tools[k]} <span> `
         }
+        let detailsRight=document.querySelector(".details__right")
 
+        if (gallerycontent[i].link=='') {
+            detailsRight.innerHTML+=`
+            <a  class="deemo deemo--nother"> visit demo </a> `
+        }else{
+            detailsRight.innerHTML+=`
+            <a target="_blank" href='${gallerycontent[i].link}' class="deemo ">
+            visit demo
+        </a>    `
+        }
+    
 
          cardPopup.style.display="unset"
          popupShadow.style.display="unset"
@@ -500,6 +512,9 @@ let gallerycontent=[
      popupShadow.classList.remove('disactive')
      let exit=document.querySelector(".exit")
      exit.addEventListener('click',remove)
+     let demoNotHer=document.querySelector(".deemo--nother")
+     demoNotHer.addEventListener('mouseover',()=>{demoNotHer.innerHTML='no demo'})
+     demoNotHer.addEventListener('mouseout',()=>{demoNotHer.innerHTML='visit demo'})
      })
      
      )

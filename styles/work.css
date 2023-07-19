@@ -286,6 +286,7 @@ transition: 0.4s;
 
 }
 .show__details .deemo{
+  width: 110px;
  color: var(--mainColor-2);
 font-family: dd;
 border: 2px solid var(--mainColor-4) ;
@@ -310,6 +311,37 @@ font-weight: 800;
 text-align: center;
 background-color: var(--mainColor-4);
 }
+.show__details .deemo--nother{
+ /* color: rgb(203, 6, 6); */
+font-family: dd;
+border: 2px solid var(--mainColor-4) ;
+padding: 8px;
+text-transform: uppercase;
+font-size: 0.4cm;
+font-weight: 800;
+background-color: #0000;
+/* height: 40px; */
+text-align: center;
+transition: 0.4s;
+}
+.show__details .deemo--nother:hover{
+ color: rgba(203, 6, 6, 0.834);
+font-family: dd;
+border: 2px solid rgba(203, 6, 6, 0.338) ;
+padding: 8px;
+text-transform: uppercase;
+font-size: 0.4cm;
+font-weight: 800;
+/* height: 40px; */
+text-align: center;
+background-color: rgba(203, 6, 6, 0.338);
+}
+
+
+
+
+
+
 .show__details .exit{
  color: var(--mainColor-2);
 font-family: dd;

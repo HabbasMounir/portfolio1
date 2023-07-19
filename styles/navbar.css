@@ -121,3 +121,10 @@ transition: 0.1s 0.4s;
 
 
 
+@media (max-width: 600px) {
+
+.navbar{
+display: none;
+}
+
+}
