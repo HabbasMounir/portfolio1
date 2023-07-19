@@ -9,6 +9,7 @@ let navCircle=document.querySelectorAll(".nav__circle")
 
 function navBarshowing() {
     hero.getBoundingClientRect().bottom<=100?navBar.style.left= 0:navBar.style.left= "-25%"
+    hero.getBoundingClientRect().bottom<=100?navBar.style.opacity= 1:navBar.style.opacity= 0
     }
 
 function changeNav() {
@@ -461,7 +462,7 @@ let gallerycontent=[
              prject title : ${gallerycontent[i].title}
         </div>
         <div class="project__tools">
-           tools: 
+        
         </div>
         </div>
         
