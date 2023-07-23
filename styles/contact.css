@@ -1,0 +1,36 @@
+
+.contact{
+    height:100vh;
+    width: 100%;
+      /* padding: 0vh 5vw ; */
+      overflow: hidden;
+      /* background-color: var(--mainColor-3); */
+      background: linear-gradient(to top, var(--mainColor-1 )-40%, var(--mainColor-1)  100%) ;
+  padding: 30px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+  
+  }
+  .get__in__touch{
+    font-size:1.2cm;  
+    text-transform: uppercase;
+      color:var(--mainColor-1);
+      /* font-family: dd; */
+      /* color: transparent; */
+      opacity: 1;
+      -webkit-text-stroke: 1px var(--mainColor-2) ;
+
+  }
+  .service{
+    font-size:0.5cm;  
+    text-transform: uppercase;
+      color:var(--mainColor-4);
+      font-family: dd;
+      /* color: transparent; */
+      margin: 10px 0;
+      opacity: 1;
+      -webkit-text-stroke: 1px var(--mainColor-2) ;
+
+  }

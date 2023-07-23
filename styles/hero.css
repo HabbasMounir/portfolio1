@@ -64,6 +64,7 @@
     -webkit-text-stroke: 1px var(--mainColor-2) ;
     /* font-family: dd; */
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
     text-transform:uppercase;
     
     color:var(--mainColor-1);
@@ -97,6 +98,7 @@
    /* padding-right: 18px;  */
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-family: dd;
    }
 
    p.content--mobile{display: none;}
@@ -146,6 +148,7 @@ color: var(--mainColor-2);
      text-align: center;
      text-transform: uppercase;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
      animation-name: outlogo;
      position: absolute;
      font-weight: 800;

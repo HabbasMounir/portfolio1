@@ -5,6 +5,7 @@
   @import url('./hero.css');
   @import url('./about.css');
   @import url('./work.css');
+  @import url('./contact.css');
   
   
   @font-face{
@@ -175,6 +176,8 @@ img{
       -moz-tap-highlight-color: transparent;
   /* outline: 1px solid rgb(145, 140, 180);  */
   scroll-behavior: smooth;
+  user-select: none;
+  -webkit-user-drag: none;
   }
 
 ::selection{
@@ -185,8 +188,8 @@ img{
 body{
     background-color: var(--mainColor-1);
     /* height: 1000vh; */
-    cursor: url("../assets/cursor/Kaihover.cur"),
-    auto;
+   /* cursor: url("../assets/cursor/Kaihover.cur"),
+    auto;*/
 }
 a{
   text-decoration: none;

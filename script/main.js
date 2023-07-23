@@ -4,6 +4,7 @@ let navBar=document.querySelector(".navbar")
 let hero= document.querySelector(".hero")
 let about=document.querySelector(".about")
 let work=document.querySelector(".work")
+// let contact=document.querySelector(".contact")
 let navCircle=document.querySelectorAll(".nav__circle")
 
 
@@ -394,7 +395,7 @@ let gallerycontent=[
     {
     id:6,
     title: "QR code" ,
-    link:"https://github.com/HabbasMounir/QR-code-component",
+    link:"https://habbasmounir.github.io/QR-code-component/",
     number:1,
     state:"light",
     src: ["/qrcode/QRcode.jpeg"] ,

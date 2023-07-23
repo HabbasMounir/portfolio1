@@ -30,7 +30,7 @@
  
 
   .work__header h5{
-    
+  margin: 20px 0 0 0;
         font-size:1.2cm;  
       text-transform: uppercase;
         color:var(--mainColor-1);
@@ -66,8 +66,7 @@ align-content: center;
 
   }
   .work__card:hover{
-    cursor: url("../assets/cursor/cursor2.cur"),
-    pointer;
+    cursor: pointer;
     color: var(--mainColor-1);
     outline: 4px var(--mainColor-4) solid;
     
