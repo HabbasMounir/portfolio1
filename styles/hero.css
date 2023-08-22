@@ -121,7 +121,7 @@ align-items: center;
     animation-name: out;
     animation-duration: 1s;
     
-
+    cursor: pointer;
   }
   .contact__me:hover{
    border-radius: 0%;

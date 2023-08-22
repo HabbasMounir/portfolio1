@@ -27,26 +27,6 @@ function changeNav() {
 navCircle.forEach(a=>a.classList.remove('in'))
 navCircle[index].classList.add('in')
 }
-// (function () {
-//     // const arr = [23, 65, 3, 19, 42, 74, 56, -42, 8, 88];
-//     const arr = [];
-  
-//     function findMinValue(arr) {
-//       if (arr.length) {
-//         let min = Infinity;
-  
-//         for (let num of arr) {
-//           min = num < min ? num : min;
-//         }
-  
-//         return min;
-//       }
-//       return 0; // or anything what you need
-//     }
-  
-//     console.log(findMinValue(arr)); // => -42
-//   })();
-
 
 document.addEventListener('scroll',navBarshowing )
 document.addEventListener('scroll',changeNav)
