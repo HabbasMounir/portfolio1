@@ -37,7 +37,7 @@
   background-color: var(--mainColor-2);
   border: var(--mainColor-3) 0.1cm solid;
   opacity: 0.8;
-  transition: 0.8s 0.2s;
+  transition: 0.4s 0.2s;
   transform: rotate(45deg) scale(1.2);
 
 
@@ -103,7 +103,7 @@ filter: brightness(150%);
   font-family: dd;
   color: var(--mainColor-4);
   opacity: 0;
-  transition: 0.4s 0.1s;
+  transition: 0.2s 0.1s;
   }
   .nav__circle a{
     display: flex;
