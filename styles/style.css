@@ -153,12 +153,12 @@ img{
 /* ///////////////////////////////////// */
 
 
-
+/* 
 ::-webkit-scrollbar {width: 0.3cm; background-color: var(--mainColor-1);}
 ::-webkit-scrollbar-thumb {background:#1F252670 ;opacity: 0.5;margin:  100px 0;}
 ::-webkit-scrollbar-thumb:hover {background: var(--mainColor-4);margin: 100px;}
 
-
+ */
 
 /* DOM */
 
